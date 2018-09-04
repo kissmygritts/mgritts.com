@@ -1,6 +1,7 @@
 import React from 'react'
 // import Helmet from 'react-helmet'
 import { graphql } from 'gatsby'
+import './dracula.css'
 
 export default ({ data }) => {
   const { markdownRemark: post } = data
