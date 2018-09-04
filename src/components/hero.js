@@ -4,7 +4,7 @@ const Hero = ({ siteTitle }) => (
   <div
     className = "bg-green mb5 flex justify-center items-center tc"
     style={{
-      height: '85vh',
+      height: '75vh',
       width: '100%'
     }}
   >

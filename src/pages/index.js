@@ -12,24 +12,43 @@ const IndexPage = ({ data }) => (
       <div className="avenir w-90 w-60-l">
         <h3 className="f3 fw5">Articles</h3>
 
-        
-        <div className="flex flex-column">  {/* post list */}
-          { data.allMarkdownRemark.edges.map(({ node }) => (
-            <div key={ node.id } className="flex flex-row pb2 f4">  {/* post */}
-              <div className="mr4 silver">{ node.frontmatter.date }</div>
+        {/* post list */}
+        <div className="flex flex-column">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id} className="flex flex-row pb2 f4">
+              {/* post */}
+              <div className="mr4 silver">{node.frontmatter.date}</div>
               <div>
-                <Link to={ node.fields.slug }
-                      className="no-underline hover-green underline-hover dark-gray">
-                        {node.frontmatter.title}
+                <Link
+                  to={node.fields.slug}
+                  className="no-underline hover-green underline-hover dark-gray"
+                >
+                  {node.frontmatter.title}
                 </Link>
               </div>
             </div>
           ))}
         </div>
 
+        {/* About */}
+        <h3 className="f3 fw5 mt4">About</h3>
+        <p>
+          I'm a wildlife ecologist and all around data nerd. I work as a data manager and web developer
+          at the Nevada Department of Wildlife. Lately, I've been working on designing fullstack data 
+          management systems to make our biologists jobs easier.
+        </p>
+        <h4 className="f4">Open Lab Notebook</h4>
+        <p>
+          After reading Carl Boettiger's lab notebooks and OpenWetWare I've decided to use this site as 
+          my "lab notebook". I'm a huge fan of open source, and in an effort to contribute to the open source 
+          community I will share my work as best I can on this site.
+        </p>
+
+        <p className="mv5 i">
+          Obligatory disclaimer: content herein are solely my own opinions and do not reflect the official policies of the Nevada Department of Wildlife, or the Government of the State of Nevada.
+        </p>
       </div>
     </div>
-
   </Layout>
 )
 
