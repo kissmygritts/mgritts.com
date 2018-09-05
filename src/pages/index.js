@@ -15,7 +15,7 @@ const IndexPage = ({ data }) => (
         {/* post list */}
         <div className="flex flex-column">
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Link to={ node.fields.slug }>
+            <Link to={ node.fields.slug } className="pointer">
               <div
                 key={node.id}
                 className="flex flex-row justify-between flex-wrap pb2 f4 mid-gray"
@@ -39,7 +39,7 @@ const IndexPage = ({ data }) => (
           Lately, I've been working on designing fullstack data management
           systems to make our biologists jobs easier.
         </p>
-        <h4 className="f4">Open Lab Notebook</h4>
+        <h4 className="f4 fw4">Open Lab Notebook</h4>
         <p>
           After reading Carl Boettiger's lab notebooks and OpenWetWare I've
           decided to use this site as my "lab notebook". I'm a huge fan of open
