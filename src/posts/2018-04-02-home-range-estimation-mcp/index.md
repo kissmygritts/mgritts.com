@@ -1,7 +1,7 @@
 ---
 title: 'Home Range Estimation: Minimum Convex Polygons'
 path: '/home-range-estimation-minimum-convex-polygons'
-date: '2016-04-02'
+date: '2018-04-02'
 ---
 I've been spending a lot of time over the last several months thinking about animal home ranges, utilization distributions, and movement ecology. All this thinking has gone into a shiny application for the exploratory analysis and visualization of animal movement data. Estimating the home ranges is fairly straight forward. The stumbling block is working with the classes in `adehabitatHR`, `adehabitatLT`, and `sp` R packages and mapping those ranges on an interactive leaflet map. I'll review different methods of estimating home ranges in several other posts. My main motivation is to better understand the underlying theory of home range estimation by digging into the code.
 

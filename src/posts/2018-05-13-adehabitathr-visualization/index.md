@@ -1,7 +1,7 @@
 ---
 title: 'adehabitatHR visualizations'
 path: '/adehabitathr-visualization'
-date: '2016-05-13'
+date: '2018-05-13'
 ---
 
 `adehabitatHR` is a must use package for spatial ecology analysis. I use it all the time to create home ranges and utilization distributions (and that is about it, I know there is a lot more that can be done). Many of the classes in `adehabitatHR` inherit or extend `sp` classes. This is great as all the visualization functions from `sp` are available. However, I never took the time to really learn base graphics. I use `ggplot2` and `leaflet` instead. Of course there are trade-offs, and the discussion of the [benefits/pitfalls](https://flowingdata.com/2016/03/22/comparing-ggplot2-and-r-base-graphics/) for each will continue *ad infinitum*. In this post I'll cover several methods for displaying `adehabitatHR` objects in `ggplot2` and `leaflet`.
