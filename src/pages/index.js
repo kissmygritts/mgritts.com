@@ -15,9 +15,8 @@ const IndexPage = ({ data }) => (
         {/* post list */}
         <div className="flex flex-column">
           {data.allMarkdownRemark.edges.map(({ node }) => (
-            <Link to={ node.fields.slug } className="pointer">
+            <Link to={node.fields.slug} className="pointer" key={node.id}>
               <div
-                key={node.id}
                 className="flex flex-row justify-between flex-wrap pb2 f4 mid-gray"
               >
                 <div className="w-100 w-two-thirds-l">
