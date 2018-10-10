@@ -30,12 +30,13 @@ module.exports = {
       resolve: 'gatsby-transformer-remark',
       options: {
         plugins: [
+          `gatsby-remark-mathjax`,
           'gatsby-remark-prismjs',
           'gatsby-remark-copy-linked-files',
           {
             resolve: 'gatsby-remark-images',
             options: {
-              maxWidth: 590,
+              maxWidth: 800,
             },
           },
         ],
